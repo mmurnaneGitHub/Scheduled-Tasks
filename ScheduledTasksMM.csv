@@ -1,0 +1,24 @@
+Name,Who,Triggers,Description,Actions,Log File Directory,Data Directory,Notes
+TacomaSpace Update,"CED, Elly Walkowiak",At 5:00 AM every day,Updates data for TacomaSpace.com website (https://wspdsmap.cityoftacoma.org/website/tacomaspace/).,\\geobase-win\ced\GADS\R2017\R192\TacomaSpaceUpdate\UpdateTacomaSpace.bat,\\geobase-win\ced\GADS\R2017\R192\TacomaSpaceUpdate\log\,\\wsitd01\c$\GADS\website\TacomaSpace\data\,
+_  GADS Web Pages Monitor,"IT, Christina Chelf",At 7:15 AM every day,Check to see if each GADS web page is up (status 200).  Email test results.,\\geobase-win\CED\GADS\R2017\R426\ScheduledTask\CED_Web_Check.bat,\\geobase-win\CED\GADS\R2017\R426\ScheduledTask\log\,N/A,
+Ping GIS Servers,"IT, Christina Chelf",At 7:00 AM every day,"Troubleshooting for GADS web apps. Look for DNS or server issues, and email results.",\\geobase-win\ced\GADS\R2017\R398\Batch\Ping_Email.bat,\\geobase-win\ced\GADS\R2017\R398\Batch\log\,N/A,
+Parcel Update,"PDS, Jennifer Ward",At 6:00 AM every Saturday,Weekly (Saturday) update of parcels and assessor tables. Email results.,\\geobase-win\ced\GADS\R2014\R506\Process\UpdateParcels.bat,\\geobase-win\CED\GADS\R2014\R506\Process\log\,\\fs005\ArcGISStore\data\PierceCounty\,Manual Process:  See notes at \\geobase-win\CED\GADS\R2014\R506\Process\README.txt
+Tacoma Land Use Permits,"PDS, Jennifer Ward",At 6:00 AM every day,Download and update json file from CivicData used in Land Use Permits App (https://wspdsmap.cityoftacoma.org/website/PDS/LandUse). Email results.,\\geobase-win\CED\GADS\R2018\R067\UpdateData\UpdateData.bat,\\geobase-win\CED\GADS\R2018\R067\UpdateData\log\,\\wsitd01\c$\GADS\website\PDS\LandUse\data\,
+Tacoma Permit Dashboard,"PDS, Jennifer Ward",At 7:00 AM every day,Download and update json file from CivicData used in Tacoma Dashboard App (https://wspdsmap.cityoftacoma.org/website/PDS/PermitDashboard/). Email results.  CivicData table updated daily @ 1:00 am.,\\geobase-win\CED\GADS\R2019\R032\UpdateData\UpdateData.bat,\\geobase-win\CED\GADS\R2019\R032\UpdateData\log\,\\wsitd01\c$\GADS\website\PDS\PermitDashboard\data\ | AGOL: https://tacoma.maps.arcgis.com/home/item.html?id=599721cb350c45f2891adb4cbee3583d & https://tacoma.maps.arcgis.com/home/item.html?id=cb01727ef47f45b7bf10406d4d3c2053,Uses ArcPro credentials to update AGOL data.  Must run from the users machine where ArcPro and AGOL ownership is the same.
+Tacoma Permits,"PDS, Jennifer Ward",At 7:00 AM every day,Download and update json file from CivicData used in Tacoma Permits App (https://wspdsmap.cityoftacoma.org/website/PDS/Permits). Email results.  CivicData table updated daily @ 1:00 am.,\\geobase-win\CED\GADS\R2018\R110\UpdateData\UpdateData.bat,\\geobase-win\CED\GADS\R2018\R110\UpdateData\log\,\\wsitd01\c$\GADS\website\PDS\Permits\data\,
+RPZ Vote Data Backup,"PW, Rachel Lindahl",At 5:00 AM every day,Backup AGOL data used for RPZ Vote application: https://wspdsmap.cityoftacoma.org/website/PW/Vote_RPZ/,\\geobase-win\ced\GADS\R2019\R013\DataBackup\UpdateData.bat,N/A,\\geobase-win\ced\GADS\R2019\R013\DataBackup\Data\ | AGOL:  https://tacoma.maps.arcgis.com/home/item.html?id=0fd58eff3877462393b45041a6df7795,Uses ArcPro credentials to update AGOL data.  Must run from the users machine where ArcPro and AGOL ownership is the same. | Creates local zipped file of AGOL data.   Also makes a AGOL backup copy named Data_ExportYYYYMMDD_XXXXXX
+RPZ Vote Data Update Check,"PW, Rachel Lindahl",At 7:00 AM every day,Send Email if RPZ Vote Data has changed on AGOL.,\\geobase-win\ced\GADS\R2019\R013\DataUpdateCheck\DataUpdateCheck.bat,\\geobase-win\ced\GADS\R2019\R013\DataUpdateCheck\log\,N/A,Email also sent to RPP@ci.tacoma.wa.us. 
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
